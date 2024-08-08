@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --tranleft : translateX(-90dvw); 
+}
+body{
+  font-family: 'Poppins', sans-sarif;
+  overflow-x: hidden;
+}
+nav{
+  position: fixed;
+  top : 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: white;
+}
+main{
+  padding-top : 15dvh;
+}
+.hero-section{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../pictures/startup-593341_1920.jpg');
+  height: 85dvh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-inline: 10px;
+  padding-block: 10em;
+  border-radius: 12px;
+}
+.text-impression{
+  background: rgba(0, 0, 0, 0.233);
+  padding-left: 20px;
+  border-radius: 50pt;
+  backdrop-filter: blur(8px);
+}
+.services-btn{
+  background: #7371fc;
+  
+}
+.learn-more-btn{
+  background: linear-gradient(to right, #7371fc, #7371fcc0);
+  padding-inline : 30pt;
+  color: white;
+  box-shadow: 0px 31px 62px -13px #7371fc;
+}
+.demo-btn{
+  border: 2px solid #7371fc;
+  color: #7371fc;
+  backdrop-filter: blur(8px);
+  
+}
+.about-page{
+  height: 50dvh;
+  object-fit: cover;
+}
+.about-us-heading{
+  font-size: 30px;
+}
+.about-description{
+  margin-top: 5rem;
+  
+}
+.services-learn-more{
+  padding-inline: 60px;
+}
+.services-card{
+  box-shadow: 0px 26px 73px -3px rgba(0,0,0,0.1);
+}
+.services-icons{
+  background: linear-gradient(to right, #7371fc, #7371fcab);
+  box-shadow: 0px 10px 75px -18px #7371fc;
+}
+.contact-btn{
+  background: linear-gradient(to right, #7371fc, #7371fcc0);
+  color: white;
+  padding-inline: 35pt;
+  padding-block: 8pt;
+  margin-left: 10px;
+  box-shadow: 0px 31px 62px -13px #7371fc;
+}
+.logo-text{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  white-space: nowrap;
+  overflow: hidden; /* Ensures text is hidden until typed */
+  border-right: 2px solid #7371fc; /* Cursor */
+  width: 0; /* Initially hidden */
+  animation: typing 4s steps(40, end) 1 normal both, blink-caret 0.75s step-end 1 normal both;
+  padding-right: 3px;
+}
+.offer-description{
+  padding-top :10dvh;
+}
+footer{
+  background: #242526;
+}
+.nav-logo{
+  height: 50px;
+  object-fit: cover;
+}
+.logo-footer{
+  height: 20dvh;
+  object-fit: cover;
+}
+.contact-us-img{
+  height: 85dvh;
+  object-fit: cover;
+}
+.submit-btn{
+  background: linear-gradient(to right, #7371fc, #7371fcab);
+  color: white;
+  padding-inline: 8rem;
+}
+.mobile-nav{
+  display: none;
+}
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Adjust based on the length of the text */
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #7371fc; /* Matches the text color */
+  }
+}
+/* 7371fc */
+
+@media only screen and (max-width : 767px) {
+  .hero-section{
+    height: 90dvh;
+    margin-inline: 6px;
+    padding-block: 8em;
+
+  }
+  .services-img{
+    height: 30dvh;
+  }
+  .mobile-nav{
+    transform: translateX(-500dvw);
+    display: block;
+    transition: transform 1s ease-in-out;
+  }
+  .show-mobile-nav{
+    transform: translateX(0dvw);
+    transition: transform .1s ease-in-out;
+
+  }
+  .contact-us-img{
+    height: 10dvh;
+    object-fit: cover;
+  }
+  .text-impression{
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width : 1024px){
+  .text-impression {
+    padding-left: 40px;
+  }
+  main{
+    padding-top: 2dvh;
+  }
+}
+@media only screen and (max-width : 2560px) {
+  main{
+    padding-top : 12dvh;
+  }
+  .contact-us-img{
+    height: 70dvh;
+    object-fit: cover;
+  }
+  .about-description{
+    margin-top: 5rem;
+    /* transform: var(--tranleft);  */
+  }
+}
