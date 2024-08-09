@@ -11,8 +11,14 @@ nav{
   top : 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 30;
   background: white;
+}
+.nav-list > li{
+  cursor: pointer;
+}
+.nav-list>li:hover{
+  color: #7371fc;
 }
 main{
   padding-top : 15dvh;
@@ -24,6 +30,15 @@ main{
   background-size: cover;
   margin-inline: 10px;
   padding-block: 10em;
+  border-radius: 12px;
+}
+.hero-section-contact{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg');
+  height: 85dvh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-inline: 10px;
+  padding-block: 5em 10em;
   border-radius: 12px;
 }
 .text-impression{
@@ -112,6 +127,18 @@ footer{
 .mobile-nav{
   display: none;
 }
+.contact-details{
+  margin-left: 12dvw;
+  padding-top: 5dvw;
+}
+
+.contact-container{
+  padding-top: 10dvh;
+}
+/* .contact-details{
+  height: auto;
+  background: url('../pictures/wave-haikei.svg');
+} */
 /* Typing animation */
 @keyframes typing {
   from {
@@ -132,6 +159,11 @@ footer{
   }
 }
 /* 7371fc */
+.submit-btn-contact{
+  background: linear-gradient(to right, #7371fc, #7371fcab);
+  color: white;
+  padding-inline: 8rem;
+}
 
 @media only screen and (max-width : 767px) {
   .hero-section{
@@ -160,6 +192,29 @@ footer{
   .text-impression{
     padding-left: 40px;
   }
+  .contact-details{
+    margin-left: 12dvw;
+    padding-top: 0dvw;
+    text-align: center;
+  }
+  
+  .hero-section-contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg');
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 10px;
+    padding-block: 5em 10em;
+    border-radius: 12px;
+  }
+  .submit-btn-contact{
+    background: linear-gradient(to right, #7371fc, #7371fcab);
+    color: white;
+    padding-inline: 7rem;
+  }
+  .contact-page-details{
+    margin-top: 0rem;
+  }
 }
 @media screen and (max-width : 1024px){
   .text-impression {
@@ -168,6 +223,12 @@ footer{
   main{
     padding-top: 2dvh;
   }
+  .submit-btn-contact{
+    background: linear-gradient(to right, #7371fc, #7371fcab);
+    color: white;
+    padding-inline: 11rem;
+  }
+  
 }
 @media only screen and (max-width : 2560px) {
   main{
@@ -181,4 +242,11 @@ footer{
     margin-top: 5rem;
     /* transform: var(--tranleft);  */
   }
+  .email-form{
+    margin-left: 15dvw;
+  }
+  .contact-page-details{
+    margin-top: 5rem;
+  }
+  
 }

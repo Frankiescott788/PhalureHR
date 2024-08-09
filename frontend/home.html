@@ -17,22 +17,25 @@
   <nav>
     <div class="container mt-3 py-2">
       <div class="d-flex justify-content-between">
-        <div class="logo d-flex nav-logo">
+        <div class="logo d-flex nav-logo " onclick="window.location.href = `#`" style="cursor: pointer;">
           <img src="assets/pictures/WhatsApp_Image_2024-08-05_at_11.29.55-removebg-preview.png" alt="" class="nav-logo animate__animated animate__fadeInDown" />
           <div class="mt-2 mt-lg-3 fs-5 logo-text animate__animated animate__fadeInDown animate__slower typing-container">PhalureHR</div>
         </div>
         <div class="d-none d-lg-flex gap-3">
-          <ul class="list-unstyled d-lg-flex gap-8 mt-2 d-none">
+          <ul class="list-unstyled d-lg-flex gap-8 mt-2 d-none nav-list">
             <li
               style= "border-bottom: 2px solid #7371fc; color: #7371fc"
+              onclick="window.location.href = `#`"
             >
               Home
             </li>
-            <li>About</li>
-            <li>Services</li>
+            <li onclick="window.location.href = `./pages/about.html`">About</li>
+            <li onclick="window.location.href = `./pages/services.html`">Services</li>
+            <li onclick="window.location.href = `./pages/team.html`">Our Team</li>
+            <li onclick="window.location.href = `./pages/gurantee.html`">Your Gurantee</li>
           </ul>
           <div>
-            <button class="btn contact-btn">Contact</button>
+            <button class="btn contact-btn" onclick="window.location.href = `./pages/contact.html`">Contact</button>
           </div>
         </div>
         <div class="d-lg-none">
@@ -60,9 +63,12 @@
             </button>
           </div>
             <ul class="list-unstyled text-center mt-10">
-              <li>Home</li>
-              <li class="my-4">About</li>
-              <li>Services</li>
+              <li onclick="window.location.href = `#`" style="color: #7371fc;">Home</li>
+              <li class="my-4" onclick="window.location.href = `./pages/about.html`">About</li>
+              <li class="mb-4" onclick="window.location.href = `./pages/services.html`">Services</li>
+              <li class="" onclick="window.location.href = `./pages/team.html`">Our Team</li>
+              <li class="my-3" onclick="window.location.href = `./pages/gurantee.html`">Your Gurantee</li>
+              <li onclick="window.location.href = `./pages/contact.html`">Contact</li>
             </ul>
         </div>
       </div>
