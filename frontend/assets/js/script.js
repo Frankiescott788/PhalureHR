@@ -82,4 +82,4 @@ nav_btn.addEventListener('click', () => {
 });
 close_btn.addEventListener('click', () => {
     mobile_nav.classList.toggle('show-mobile-nav')
-})
+});

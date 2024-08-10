@@ -135,6 +135,17 @@ footer{
 .contact-container{
   padding-top: 10dvh;
 }
+.about-us-img{
+  height: 30rem;
+  object-fit: cover;
+}
+.about-us-img-two{
+  height: 20rem;
+  object-fit: cover;
+}
+.about-us-desc{
+  margin-top: 7rem;
+}
 /* .contact-details{
   height: auto;
   background: url('../pictures/wave-haikei.svg');
@@ -227,6 +238,17 @@ footer{
     background: linear-gradient(to right, #7371fc, #7371fcab);
     color: white;
     padding-inline: 11rem;
+    
+  }
+  .mobile-nav{
+    transform: translateX(-500dvw);
+    display: block;
+    transition: transform 1s ease-in-out;
+  }
+  .show-mobile-nav{
+    transform: translateX(0dvw);
+    transition: transform .1s ease-in-out;
+
   }
   
 }
